@@ -1,1 +1,63 @@
-Test123
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><style></style></head><body id="preview">
+<p>We can implement both apply() and product() with monad’s operations unit(), map() and flatten().</p>
+<p>Given:</p>
+<pre><code>trait Monad[F[_]] {
+  def map[A, B](fa: F[A], f: A =&gt; B): F[B] = ???
+  def flatten[A](fa: F[F[A]]): F[A] = ???
+}
+</code></pre>
+<p>they can be implemented as:</p>
+<pre><code>trait Monad2[F[_]] extends Monad[F] {
+  def apply[A, B](fa: F[A], fab: F[A =&gt; B]): F[B] = flatten(map(fab, (f: A =&gt; B) =&gt; map(fa, f)))
+  def product[A, B](fa: F[A], fb: F[B]): F[(A, B)] = flatten(map(fa, (a: A) =&gt; map(fb, (b: B) =&gt; (a,b))))
+}
+</code></pre>
+<p>Here’s an example of using apply() with a curried function. I will provide a concrete implementation of apply() for <code>List</code> just for simplicity.</p>
+<pre><code>def apply[A, B](list: List[A], f: List[A =&gt; B]): List[B] = f.flatMap(f =&gt; list.map(f))
+
+val curriedF = (a: Int) =&gt; (b: Int) =&gt; (c: Int) =&gt; a + b + c
+
+val list1 = List(1)
+val list2 = List(2)
+val list3 = List(3)
+val result1 = apply(list1, List(curriedF))
+val result2 = apply(list2, result1)
+val result3 = apply(list3, result2)
+
+println(result3) // List(6)
+</code></pre>
+<p>The usage is the same as in applicative case. However, there’s a significant difference - if apply (or product, for that matter) is implemented using a flatMap, we are taking advantage of monad’s power to chain things into series. Standard apply/product from applicative lack this ability.</p>
+<p>Since we worked with apply() in the previous example, let’s now take product(). We can implement it once with monad’s functions, and once in a typical applicative fashion (by using zip):</p>
+<pre><code>// we'll need these throughout the example
+import scala.concurrent.{Await, Future}
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext.Implicits.global
+
+def product[A, B](f1: =&gt; Future[A], f2: =&gt; Future[B]): Future[(A, B)] = f1.flatMap(a =&gt; f2.map(b =&gt; (a,b)))
+def product2[A, B](f1: =&gt; Future[A], f2: =&gt; Future[B]): Future[(A, B)] = f1 zip f2
+</code></pre>
+<p>So, second one is what you get when you’re using applicative, while first is the advanced, monad version. Note that both are taking their parameters by-name instead of by-value in order to prevent futures from executing as soon as they are passed.</p>
+<p>Let’s now create the futures:</p>
+<pre><code>def first = Future { println(&quot;first&quot;); Thread.sleep(2000); 1 }
+def second = Future { println(&quot;second&quot;); Thread.sleep(2000); 2 }
+</code></pre>
+<p>Using serial product:</p>
+<pre><code>// prints &quot;first&quot;, then two seconds later &quot;second&quot;
+val result1 = product(first, second).map { case (a, b) =&gt; a + b }
+Await.result(result1, 10 seconds)
+</code></pre>
+<p>Using parallel product:</p>
+<pre><code>// performs in parallel; order of printing &quot;first&quot; and &quot;second&quot; is indeterministic
+val result2 = product2(first, second).map { case (a, b) =&gt; a + b }
+Await.result(result2, 10 seconds)
+</code></pre>
+<p>Finally, the scalaz version. I never managed to get “second” printed before “first”, but they are still almost simultaneous (unlike the first product() where we can clearly see the two second difference between each printout).</p>
+<pre><code>import scalaz._, Scalaz._
+
+// &quot;first&quot; and &quot;second&quot; are printed simultaneously
+val result3 = (first |@| second) { case (a, b) =&gt; a + b }
+Await.result(result3, 10 seconds)
+</code></pre>
+<p>While monad could have methods such as apply() or product() exposed in its API, it probably doesn’t make a lot of sense. Still, if one needs them, we have seen here that they can be easily implemented in terms of existing monad functions. Note that even if their signatures are the same as applicative’s, we have also seen that monad’s power - ability to chain computations in series - is still present. We could also make them work in parallel; in this particular example we simply need to go from by-name to by-value invocation by removing the <code>=&gt;</code> from each parameter type. But if one needs a parallel computation, best practice is to use the least powerful abstraction that does the job, instead of “dumbing down” the monad.</p>
+
+</body></html>
