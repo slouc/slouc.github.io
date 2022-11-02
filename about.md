@@ -1,7 +1,10 @@
 ---
 layout: page
-title: About
+title: You can find me here:
 permalink: /about/
 ---
 
-Some information about me! Woooo
+- [LinkedIn](https://www.linkedin.com/in/sinisalouc/)
+- [StackOverflow](https://stackoverflow.com/users/5599298/slouc)
+- [GitHub](https://github.com/slouc)
+- [Email](mailto:sinisalouc@gmail.com)

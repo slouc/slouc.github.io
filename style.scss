@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px/1.4 $georgia;
   color: $darkGray;
 }
 
@@ -31,41 +31,39 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $georgia;
   color: $darkerGray;
-  font-weight: bold;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0 10px;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1;
   }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 22px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 14px;
   color: $gray;
 }
 
 p {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
 a {
@@ -194,7 +192,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $georgia;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,8 +211,8 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  font-family: $georgia;
+  font-size: 16px;
 
   @include mobile {
     float: none;
@@ -242,7 +240,7 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
 }
 
@@ -257,25 +255,22 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
   }
 
   .comments {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {

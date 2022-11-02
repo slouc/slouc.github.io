@@ -1,14 +1,8 @@
 name: Sinisa Louc
 
-description: Software Engineer
+description: My Place For Random Stuff
 
 avatar: https://raw.githubusercontent.com/slouc/slouc.github.io/master/images/profile_pic.png
-
-footer-links:
-  email: sinisalouc@gmail.com
-  github: slouc
-  linkedin: https://www.linkedin.com/in/sinisalouc/
-  stackoverflow: users/5599298/slouc
 
 permalink: /:title/
 
