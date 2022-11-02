@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why the blog?
+title: Post number three
 ---
 
 That's right!

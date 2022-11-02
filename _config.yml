@@ -14,10 +14,7 @@ permalink: /:title/
 
 version: v1.2.0
 
-plugins:
-  - jekyll-remote-theme
-
-remote_theme: jekyll/minima
+theme: minima
 
 kramdown:
   input: GFM
