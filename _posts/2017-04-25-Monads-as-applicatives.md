@@ -30,7 +30,7 @@ We can demonstrate that by implementing applicative's `apply + product` using mo
 
 Let's say we have the following definition of a monad in Scala (we agreed to omit `unit`):
 
-```
+```scala
 trait Monad[F[_]] {
   def map[A, B](fa: F[A], f: A => B): F[B] = ???
   def flatten[A](fa: F[F[A]]): F[A] = ???
@@ -39,7 +39,7 @@ trait Monad[F[_]] {
 
 Applicative's methods can then be implemented as:
 
-```
+```scala
 trait Monad2[F[_]] extends Monad[F] {
 
   def apply[A, B](fa: F[A], fab: F[A => B]): F[B] = 
@@ -52,7 +52,7 @@ trait Monad2[F[_]] extends Monad[F] {
 
 Here's an example of using `apply` with a curried function, using `List` for simplicity.
 
-```
+```scala
 def apply[A, B](list: List[A], f: List[A => B]): List[B] = f.flatMap(f => list.map(f))
 
 val curriedF = (a: Int) => (b: Int) => (c: Int) => a + b + c
@@ -68,7 +68,7 @@ we are taking advantage of monad's power to chain things into series. Applicativ
 Let's show this difference in practice. Since we were working with `apply` in the previous example, let's take `product` now. 
 We can provide two different implementations: one using monadic functions, and another one in standard applicative fashion (we can use standard Scala's `zip`):
 
-```
+```scala
 // Future stuff
 import scala.concurrent.{Await, Future}  
 import scala.concurrent.duration._  
@@ -86,18 +86,23 @@ def parallelProduct[A, B](f1: => Future[A], f2: => Future[B]): Future[(A, B)] =
 Note that both are taking their parameters by-name instead of by-value in order to prevent futures from executing as soon as they are passed.
 
 Let's create the futures:
-```
+
+```scala
 def first = Future { println("first"); Thread.sleep(2000); 1 }
 def second = Future { println("second"); Thread.sleep(2000); 2 }
 ```
+
 Using serial product, we get:
-```
+
+```scala
 val result1 = serialProduct(first, second).map { case (a, b) => a + b }
 Await.result(result1, 10 seconds)
 // prints "first", then two seconds later "second"
 ```
+
 Using parallel product, we get:
-```
+
+```scala
 val result2 = parallelProduct(first, second).map { case (a, b) => a + b }
 Await.result(result2, 10 seconds)
 // performs in parallel; order of printing is indeterministic

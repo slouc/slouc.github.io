@@ -1,6 +1,6 @@
 ---
 layout: page
-title: You can find me here:
+title: "You can find me here:"
 permalink: /about/
 ---
 
