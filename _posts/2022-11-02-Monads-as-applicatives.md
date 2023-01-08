@@ -3,6 +3,8 @@ layout: post
 title: Monads as applicative functors
 ---
 
+(If you're not into functional programming, this article might not make much sense)
+
 Applicative functor (or just "applicative" in short) is a more general abstraction than a monad. 
 In other words, monad is an applicative with extra functionality, and therefore a more specialised and stronger abstraction.
 
