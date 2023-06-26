@@ -42,7 +42,7 @@ into its right location within an already sorted three-element array (done in th
 
 Here's another example:
 
-<img src="../images/sorting_algo.png" width="500" height="250">
+<img src="../images/sorting_algo.png" class="img-responsive">
 
 Without going into too much detail, it figured out that it can perform a simpler `min(A, B)` 
 instead of `min(A, B, C)` because at that point `B <= C` is guaranteed. Feel free to verify it.

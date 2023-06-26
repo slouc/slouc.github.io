@@ -30,6 +30,6 @@ Now:
   - For *AC* ("1234321"), end state *S2* should be **accepting**
   - For *BC* ("5678321"), end state *S2* should be **non-accepting**
 
-![dfa](../images/dfa.png)
+<img src="../images/dfa.png" class="img-responsive">
 
 We reached a contradiction; *S2* cannot be both accepting and non-accepting.
