@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Musical modes are basically just holes"
+title: "Musical modes are just holes"
 ---
 
 When you listen to some melody, your brain doesn't perceive the notes in terms of their absolute pitch.
@@ -140,7 +140,7 @@ E F F# G G# A A# B C C# D D# E
 ```
 E-Major retained the holes and got its notes changed.
 E-Phrygian retained the notes and got its holes changed.
-Something has to give; the only key with the same notes as C-Major, AND the same holes as C-Major - is C-Major.
+Something has to give; the only key with the same notes as C-Major, AND the same holes as C-Major... is C-Major.
 
 Taking a closer look at the Phrygian case, it seems as if the major scale got "rotated" by two places.
 Everything stayed the same, we just changed our starting point. Similarly to how all weekly calendars
@@ -200,8 +200,8 @@ assignment: using the rotation technique, figure out which major key shares its 
 It is not uncommon for people to be unable to agree which mode some piece of music is in. This
 happens when there is not enough harmonic context, so the mode becomes ambiguous and therefore subjective. 
 One example that comes to mind is [Daft Punk's "Get Lucky"](https://slate.com/culture/2014/03/daft-punks-get-lucky-explained-using-music-theory.html)
-(my vote goes to B-Dorian here). For most songs, however, the mode is very clear.
-[Here are some examples.](https://www.christybannerman.com/examples-of-modes-in-songs-and-rock-music/)
+(my vote goes to B-Dorian here). For some songs, however, the mode is very clear.
+Joe Satriani's "Flying In A Blue Dream" is schoolbook Lydian.
 
 Now here's another very cool thing: **there are other hole pattern "blueprints" too!** You can
 take one and start rotating it, discovering a completely new set of modes.
@@ -267,14 +267,12 @@ Here is the Phrygian Dominant:
 </figure>
 
 Makes a world of difference, doesn't it? 
-Don't jump to a conclusion that it's that raised G# note that makes the difference. Key of E-Major
+Don't jump to a conclusion that it's that raised G# note that makes the difference on its own. Key of E-Major
 has that same note, and yet doesn't have the same vibe. It's not the note itself, but the gap that precedes it.
 It's all about the hole pattern!
-
-For even more dramatic effect, let's now play a slightly modified version. Same key,
-still in E-Phrygian - we will just tweak the melody itself by retaining the first bit, 
-but then hopping from that third note briefly all the way to fourth and then back,
-revolving around it for even more effect.
+ 
+Staying in Phrygian Dominant, let's slightly tweak the second part of the melody to linger around that
+third note a bit longer, hopping briefly to fourth and back for even more dramatic effect.
 
 <figure>
     <audio
@@ -296,4 +294,4 @@ That's the beauty of modes - not only do they make music more interesting,
 but they are also versatile enough to be incorporated anywhere, instead of being tied to a particular genre.
 
 That's all for now! Thanks for getting this far, 
-and feel free to further explore this rabbit hole for yourself - it's highly rewarding.
+and consider further exploring this rabbit hole for yourself. It's highly rewarding.
