@@ -1,1 +1,3 @@
-# Le Readme [todo]
+# Readme
+
+My personal blog
