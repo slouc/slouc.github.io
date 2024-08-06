@@ -5,12 +5,12 @@ title: "Musical modes are just holes"
 
 When you listen to some melody, your brain doesn't perceive the notes in terms of their absolute pitch.
 Instead, it perceives each note based on how far away it is from the [tonic](https://en.wikipedia.org/wiki/Tonic_(music)) -
-the first (or root) note of the scale. Tonic is an anchor everything revolves around.
-Our brain particularly likes it when the melody ends (or "resolves") on a tonic.
+the first (or root) note of the scale. Tonic is the anchor everything revolves around.
+Our brain particularly likes it when the melody ends (or "resolves") on the tonic.
 
 "Twinkle twinkle
 little star" can be played starting from any note (C, D, E, etc.), as long as it's played like this
-(counting only the notes of the key, CDEFGAB, and not the semitones in between):
+(counting only the notes of the major key and not the semitones in between):
 ```
 1st, 1st, 5th, 5th, 6th, 6th, 5th, [pause], 4th, 4th, 3rd, 3rd, 2nd, 2nd, 1st
 ```
@@ -56,29 +56,6 @@ It's not so easily noticeable in this oversimplified context, especially if you 
 after major (so your brain is still biased),
 but hopefully you'll recognize that it sounds
 more exotic. That's because we're now in the key of *E-Phrygian*.
-
-Here's an extra nudge for your brain: first three notes of the major scale, vs first three notes of Phrygian:
-
-<figure>
-    <audio
-        controls
-        src="../audio/major_three_notes.mp3">
-            <a href="../audio/major_three_notes.mp3">
-                Download audio
-            </a>
-    </audio>
-</figure>
-
-
-<figure>
-    <audio
-        controls
-        src="../audio/phrygian_three_notes.mp3">
-            <a href="../audio/phrygian_three_notes.mp3">
-                Download audio
-            </a>
-    </audio>
-</figure>
 
 Phrygian is often described as being
 the bread & butter of Middle-Eastern music and Spanish flamenco.
@@ -143,8 +120,8 @@ E-Phrygian retained the notes and got its holes changed.
 Something has to give; the only key with the same notes as C-Major, AND the same holes as C-Major... is C-Major.
 
 Taking a closer look at the Phrygian case, it seems as if the major scale got "rotated" by two places.
-Everything stayed the same, we just changed our starting point. Similarly to how all weekly calendars
-share the same days, but some start on Sunday, and some on Monday.
+Everything stayed the same, we just changed our starting point. This is intuitively relatable with
+our exercise from earlier, playing the same notes while using a different tonic (because the tonic _is_ the starting point).
 
 <img src="../images/major_and_phrygian.png" class="img-responsive">
 
@@ -189,12 +166,14 @@ B-C-D-E-F-G-A    S-W-W-H-W-W-W     B-Locrian
 ``````
 
 This is why C-Major (or C-Ionian) shares the same notes as E-Phrygian. Same notes, but a
-different hole pattern, giving a different vibe.
+different hole pattern, giving a different vibe. Remember, "the vibe" comes from the hole pattern.
 
 <img src="../images/modes_table.png" class="img-responsive">
 
-Note that C-Major is significantly different from C-Phrygian though. They don't share the same set of notes,
-nor do they share the same mode. All they share is the tonic and, well, some of the notes. Homework
+Note that C-Major is significantly different from C-Phrygian. They don't share the same set of notes (like
+C-Major and E-Phrygian do),
+nor do they share the same hole pattern (like C-Major and D-Major do). 
+All they share is the tonic and, well, some of the notes. Homework
 assignment: using the rotation technique, figure out which major key shares its notes with C-Phrygian.
 
 It is not uncommon for people to be unable to agree which mode some piece of music is in. This
@@ -203,12 +182,46 @@ One example that comes to mind is [Daft Punk's "Get Lucky"](https://slate.com/cu
 (my vote goes to B-Dorian here). For some songs, however, the mode is very clear.
 Joe Satriani's "Flying In A Blue Dream" is schoolbook Lydian.
 
-Now here's another very cool thing: **there are other hole pattern "blueprints" too!** You can
+Quick recap: C-Major and E-Phrygian are two modes of the same key. They share the exact same
+notes, but because of a different starting point (tonic), jumping around those notes yields
+a different hole pattern. For example, in order to go from the tonic to the second note of the key,
+C-Major requires a whole step (C -> D), while E-Phrygian requires a half step (E -> F). If you would
+instead make a whole step (E -> F#), you would break away from the established "C Major" set of notes, and
+therefore you would no longer be in any of its modes.
+
+What happens when we compare C-Major to C-Phrygian?
+They both start with C, but they differ in some of the notes, which means they also have different
+hole patterns; for example, first three notes of each are C-D-E and C-C#-E respectively, making the
+hole pattern W-W vs H-W. And because of the different hole pattern, even in those first three notes,
+they give off a different vibe already:
+
+<figure>
+    <audio
+        controls
+        src="../audio/major_three_notes.mp3">
+            <a href="../audio/major_three_notes.mp3">
+                Download audio
+            </a>
+    </audio>
+</figure>
+
+
+<figure>
+    <audio
+        controls
+        src="../audio/phrygian_three_notes.mp3">
+            <a href="../audio/phrygian_three_notes.mp3">
+                Download audio
+            </a>
+    </audio>
+</figure>
+
+OK, moving on. Here's another very cool thing: **there are other hole pattern "blueprints" too!** You can
 take one and start rotating it, discovering a completely new set of modes.
 
 Let's take a look at the good old natural minor scale (= Aeolian mode) with its hole pattern `W-H-W-W-H-W-W`,
 and let's tweak it a bit.
-This time I don't mean rotating; on the contrary, let's "force" it into a hole pattern
+This time I don't mean rotating; let's "force" it into a hole pattern
 that *cannot* be obtained by rotating. We want to break the standard mould.
 
 Looking at the usual Aeolian hole pattern:
@@ -220,21 +233,20 @@ A A# B C C# D D# E F F# G G# A
 we can modify it into this:
 ```
 A A# B C C# D D# E F F# G G# A
-| w  |h| w  | w  |h| w+s  |h |
+| w  |h| w  | w  |h| w+h  |h |
 ```
 We shifted the bracket from G to G#, and by doing so, we 
 created one big gap between F and G# which never existed before.
-We never had a hole that was three semitones wide (denoted above as `W + H`),
+We never had a hole that was three semitones wide (denoted above as `w + h`),
 therefore we couldn't have arrived at this hole pattern from the major scale, not matter how much we rotated it.
 
 By doing this change, we have turned our natural minor into a *harmonic minor*.
 
-Rotating this hole pattern yields a [whole new set of beautiful modes](https://en.wikipedia.org/wiki/Harmonic_minor_scale#Modes_of_harmonic_minor_scale)
-, such as "Ukrainian Dorian" or "Super-Locrian".
+Rotating this hole pattern yields a [whole new set of beautiful modes](https://en.wikipedia.org/wiki/Harmonic_minor_scale#Modes_of_harmonic_minor_scale), such as "Ukrainian Dorian" or "Super-Locrian".
 But my favorite of that bunch is the Phrygian Dominant. It's similar to the standard Phrygian we
 explored already, but it brings much more accent to the "Middle-Eastern sound" (as Western-music fans like to call it).
 
-Phrygian Dominant has the following hole pattern: `H-WS-H-W-H-W-W`, with `WS` being the "big gap" we 
+Phrygian Dominant has the following hole pattern: `H-WH-H-W-H-W-W`, with `WH` being the "big gap" we 
 saw with the harmonic minor (but now being in a different spot relatively to the tonic, due to rotation).
 
 Let's hear our original E-Phrygian melody once more:
@@ -284,12 +296,10 @@ third note a bit longer, hopping briefly to fourth and back for even more dramat
     </audio>
 </figure>
 
-I suddenly feel like playing Prince of Persia!
-
-But as exotic as this mode may sound, it would be wrong to label it as belonging to any particular
-region of the world or style of music. 
+It's like music from "One Thousand And One Nights"!
+But it can also be used in other contexts too.
 For example, Muse's "Stockholm Syndrome" intro riff is, you guessed it - Phrygian Dominant. 
-And sure, it has a sinister vibe, but honestly it doesn't really sound Arabic or Spanish to me.
+It doesn't really sound Arabic or Spanish to me.
 That's the beauty of modes - not only do they make music more interesting,
 but they are also versatile enough to be incorporated anywhere, instead of being tied to a particular genre.
 
