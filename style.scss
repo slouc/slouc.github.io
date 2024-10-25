@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 16px/1.4 $georgia;
+  font: 16px/1.4 $arial;
   color: $darkGray;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $georgia;
+  font-family: $arial;
   color: $darkerGray;
 
   margin: 0.6em 0 3px;
@@ -200,7 +200,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $georgia;
+  font-family: $arial;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -219,7 +219,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $georgia;
+  font-family: $arial;
   font-size: 16px;
 
   @include mobile {
