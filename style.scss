@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 16px/1.4 $arial;
+  font: 16px/1.4 $fontfamily;
   color: $darkGray;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $arial;
+  font-family: $fontfamily;
   color: $darkerGray;
 
   margin: 0.6em 0 3px;
@@ -171,9 +171,9 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 85px;
+  height: 85px;
+  margin-right: 1em;
 
   @include mobile {
     float: none;
@@ -187,12 +187,13 @@ img {
 }
 
 .site-info {
+  margin-top: 1em;
   float: left;
 
   @include mobile {
+    margin-top: 1em;
     float: none;
     display: block;
-    margin: 0 auto;
   }
 }
 
@@ -200,18 +201,19 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $arial;
+  font-family: $fontfamily;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin-top: 1px;
   color: $gray;
   font-size: 16px;
 
   @include mobile {
+    margin-top: 1em;
     margin: 3px 0;
   }
 }
@@ -219,7 +221,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $arial;
+  font-family: $fontfamily;
   font-size: 16px;
 
   @include mobile {
