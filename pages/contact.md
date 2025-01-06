@@ -1,8 +1,9 @@
 ---
 layout: page
-title: "You can find me here:"
-permalink: /about/
+permalink: /contact/
 ---
+
+You can find me here:
 
 - [LinkedIn](https://www.linkedin.com/in/sinisalouc/)
 - [StackOverflow](https://stackoverflow.com/users/5599298/slouc)
