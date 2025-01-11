@@ -1,3 +1,5 @@
 # Readme
 
-My personal blog
+My personal blog.
+
+Built using [Jekyll](https://jekyllrb.com).
