@@ -6,7 +6,7 @@ permalink: /blog/
     <div class="posts">
       {% for post in site.posts %}
         <article class="post">
-          <li><h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2></li>
+          <li><h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1></li>
         </article>
     {% endfor %}
     </div>
