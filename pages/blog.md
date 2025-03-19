@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blog/
+permalink: /notes/
 ---
 <ul>
     <div class="posts">
