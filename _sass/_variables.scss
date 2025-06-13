@@ -15,7 +15,7 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$fontfamily: "Bookman Old Style", "Serifa BT", "URW Bookman L", "itc bookman", times, serif;
+$fontfamily: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
