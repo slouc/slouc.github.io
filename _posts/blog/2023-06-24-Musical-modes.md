@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Musical modes are just holes"
+title: "Musical modes"
 ---
 
 When you listen to some melody, your brain doesn't perceive the notes in terms of their absolute pitch.
