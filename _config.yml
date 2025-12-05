@@ -1,6 +1,8 @@
-name: Sinisa Louc
+name: This must be the place
 
-description: My corner of the internet
+description: Sinisa Louc
+
+avatar: https://raw.githubusercontent.com/slouc/slouc.github.io/master/images/profile_pic.jpg
 
 permalink: /:title/
 
