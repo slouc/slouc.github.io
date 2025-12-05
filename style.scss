@@ -192,6 +192,12 @@ img {
   }
 }
 
+.responsive-image {
+  height: auto;
+  width: 20%;
+  max-width: 20%;
+}
+
 .site-name {
   margin: 0;
   color: $darkGray;
