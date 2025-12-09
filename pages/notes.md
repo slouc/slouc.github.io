@@ -7,7 +7,10 @@ permalink: /blog/
       {% for post in site.posts %}
         {% if post.path contains 'blog' %}
           <article class="post">
-            <li><h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2></li>
+            <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <p class="date">{{ post.date | date: "%B %e, %Y" }}</p>
+            </li>
           </article>
         {% endif %}
       {% endfor %}
