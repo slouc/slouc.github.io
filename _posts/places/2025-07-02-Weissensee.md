@@ -1,11 +1,11 @@
 ---
-layout: photos
-title: New York, USA
+layout: places
+title: Weissensee, Berlin, Germany
 ---
 
 <div class="gallery">
   {% for file in site.static_files %}
-    {% if file.path contains 'images/nyc' %}
+    {% if file.path contains 'images/weissensee' %}
         <img src="/img/blank.png" alt="" data-echo="{{ file.path }}">
     {% endif %}
  {% endfor %}
