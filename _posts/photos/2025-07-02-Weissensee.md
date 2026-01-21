@@ -1,6 +1,6 @@
 ---
 layout: photos
-title: Weissensee
+title: Weissensee, Berlin, Germany
 ---
 
 <div class="gallery">
