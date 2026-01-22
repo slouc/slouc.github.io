@@ -28,6 +28,7 @@ Here's a short overview of the three types of radioactive emissions:
 - Mass: 0, charge: 0, 100% light speed.
 - Emitted when a nucleus has _too much energy_
 - Tens of cm through living tissue, halved in intensity by 1.2cm lead
+- Least ionizing, but most harmful by exposure (due to high penetration)
 - Medical imaging (PET scan: after beta positrons collide with body electrons, gamma is emitted and detected)
 
 [^1]: Has enough energy to kick electrons out of atoms, turning them into ions
