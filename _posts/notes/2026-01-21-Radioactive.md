@@ -9,7 +9,7 @@ Here's a short overview of the three types of radioactive emissions:
 - Helium nucleus (two protons and two neutrons)
 - Mass: 4 atomic mass units, charge: +2, ~5% light speed
 - Emitted when a nucleus is _too big and unstable_ (result is more tightly bound and has lower energy), e.g. Uranium 238 and Radium 226
-- Most ionizing [^1]
+- Most ionizing
   - Therefore, highly dangerous. 
   - However, the particle is large and loses energy rapidly, resulting in it being very short range and easily blocked by layers like skin or paper. Only dangerous if inhaled or ingested.
 - Smoke alarms
@@ -30,5 +30,3 @@ Here's a short overview of the three types of radioactive emissions:
 - Tens of cm through living tissue, halved in intensity by 1.2cm lead
 - Least ionizing, but most harmful by exposure (due to high penetration)
 - Medical imaging (PET scan: after beta positrons collide with body electrons, gamma is emitted and detected)
-
-[^1]: Has enough energy to kick electrons out of atoms, turning them into ions
