@@ -28,10 +28,6 @@ are 50-50.
 [Here are some of the comments](http://facweb1.redlands.edu/fac/jim_bentley/Data/Math%20311/MontyHall/MontyHall.html#comments-1) 
 (sadly, the original forum is down).
 
-<img src="../images/monty.png" width="400" height="400">
-
-_[DALL-E: “a math professor woman is correct about the two goats and a car”](https://labs.openai.com/s/pSLczN8WU9XEWA3jfB3ROW3y)_
-
 To be honest, I didn't see it either. I was young, but I definitely had enough
 of basic probability knowledge to work it out; however, the counter-intuition was so strong that
 I was compelled to write a short C program to check it. 

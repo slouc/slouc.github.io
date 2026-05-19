@@ -88,7 +88,7 @@ Just make sure your melody revolves around E instead of C.
 - E-minor chord makes sense within the E-Phrygian scale for the same reason it makes sense within the C-Major scale 
 (as we just discovered, E-Phrygian and C-Major scales share the same notes).
 
-<img class="img-responsive" src="../images/modes_perception.png">
+<img class="img-responsive" src="../../images/modes_perception.png">
     
     
 
@@ -107,7 +107,7 @@ C C# D D# E F F# G G# A A# B C
 
 The pattern for *any major scale* is `W-W-H-W-W-W-H`.
 
-<img src="../images/major_minor.png" class="img-responsive">
+<img src="../../images/major_minor.png" class="img-responsive">
 
 E-Phrygian also starts from E, but it retained the C-major notes (`E-F-G-A-B-C-D`), 
 and therefore has the following hole pattern:
@@ -123,7 +123,7 @@ Taking a closer look at the Phrygian case, it seems as if the major scale got "r
 Everything stayed the same, we just changed our starting point. This is intuitively relatable with
 our exercise from earlier, playing the same notes while using a different tonic (because the tonic _is_ the starting point).
 
-<img src="../images/major_and_phrygian.png" class="img-responsive">
+<img src="../../images/major_and_phrygian.png" class="img-responsive">
 
 But this brings a very significant change to how we perceive music in this key, because the hole pattern
 now reads totally differently - from `W-W-H-W-W-W-H`, it became `H-W-W-W-H-W-W`.
