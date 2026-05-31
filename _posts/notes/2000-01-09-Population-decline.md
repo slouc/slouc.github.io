@@ -119,7 +119,7 @@ they are highly correlated. And if this is indeed the case, then our global popu
 will take the logarithmic "slowdown" shape as seen in the left column.
 
 
-So if I had to guess, I'd say that we will stabilize somewhere near the replacement rate 
+If I had to guess, I'd say that we will stabilize somewhere near the replacement rate 
 within the next few decades. And a hundred years later, for the first
 time in history, kids in school will get a very similar answer to "how many people are there on Earth?" 
 as their parents and grandparents did. Where do we go from there - I have no idea.

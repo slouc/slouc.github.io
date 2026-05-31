@@ -71,6 +71,3 @@ between those on the left and those on the right remains untouched.
 
 But mean is affected by the actual values. And so is MSE, particularly the outliers
 (because of exponential growth).
-
-I know it's a bit handwavy, but I just wanted to build some intuition for myself,
-and perhaps it helped someone else too.

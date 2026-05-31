@@ -3,7 +3,7 @@ layout: post
 title: AI just found a new sorting algorithm (or did it?)
 ---
 
-Yesterday, DeepMind [announced](https://www.nature.com/articles/s41586-023-06004-9) that their AI 
+Yesterday (07 June 2023), DeepMind [announced](https://www.nature.com/articles/s41586-023-06004-9) that their AI 
 (more specifically DRL) managed to find alternative sorting
 algorithms which outperform current state-of-the-art.
 
